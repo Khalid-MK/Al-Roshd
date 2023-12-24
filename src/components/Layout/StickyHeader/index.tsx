@@ -8,7 +8,7 @@ import type { MenuProps } from "antd";
 import { CaretDownOutlined } from "@ant-design/icons";
 
 import { containerSpace } from "../../../globalVariables";
-import logo from "../../../Assets/images/Logo.png";
+import logo from "../../../assets/images/Logo.png";
 
 import styles from "./index.module.css";
 
