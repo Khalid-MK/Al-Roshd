@@ -1,0 +1,94 @@
+.conatiner{
+    background-color: #F3F6FF;
+    padding: 2rem 0;
+
+}
+
+.imgSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.imgContainer{
+    max-width: 20rem;
+ 
+}
+
+
+.textSection h2{
+    width: fit-content;
+color: var(--global-color-accent);
+font-size: 1.6rem;
+font-weight: 900;
+line-height: 1.3em;
+text-decoration: none;
+position: relative;
+
+}
+
+.textSection h2:after {
+    content: '';
+    width: 30%;
+    position: absolute;
+    left: 0;
+    top: 3rem;
+    border-width: 0 0 2px;
+    border-style: solid;
+    color: var(--primary-color);
+}
+
+.textSection ul   {
+   display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.textSection ul li  {
+    gap: 1rem;
+   display: flex;
+   align-items: center;
+}
+
+.textSection ul li div {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color:   #F3F6FF;
+    font-weight: bold;
+ 
+}
+
+.textSection ul li p {
+
+    color: var(--global-color-accent);
+    font-size: 1rem;
+    font-weight: bold;
+ 
+}
+
+
+
+.btn{
+    background-color: var(--global-color-accent) !important;
+    color: white !important;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 2.8rem;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+    width: fit-content;
+    }
+    
+
+    
+.btn:hover{
+    background-color: var(--primary-color) !important;
+   
+    }
+    

@@ -1,0 +1,81 @@
+.nav{
+  padding:  1rem 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+  z-index: 999;
+
+}
+
+.imageContainer {
+    max-width: 18rem; /* Set the maximum width of the container */
+    margin: 0 auto; /* Center the container on the page (optional) */
+    transition: all 0.5s ease-in-out;
+  }
+
+  .stickyImageContainer {
+    max-width: 10rem; /* Set the maximum width of the container */
+    margin: 0 auto; /* Center the container on the page (optional) */
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .containedImage {
+    width: 100%; /* Make the image take up 100% of the container's width */
+    height: auto; /* Maintain the aspect ratio of the image */
+    display: block; /* Remove any default inline styles on the image */
+  }
+
+  .list{
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  /* .list li{
+    padding-top: 2.5rem;
+  } */
+  
+  .itemStyle{
+  color: var(--global-color-accent) ;
+  font-weight: bold;
+  font-size: 1rem;
+  }
+
+  .list .itemStyle:hover{
+    color: var(--primary-color) ;
+    border-bottom: 0.2rem solid var(--primary-color);
+    padding-bottom: 0.5rem;
+  }
+
+  .menu{
+    background-color: var( --secondary-color) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    min-width: 7rem !important;
+  
+  }
+
+  .menu  li{
+    color:var(--global-color-accent) !important;
+    font-weight: bold !important;
+    font-size: 0.8rem !important;
+    padding:  1rem  !important;
+
+    border-radius: 0 !important;
+    border-bottom: 0.1rem solid var(--global-color) !important;
+  }
+
+  .menu  li:hover{
+    background-color: var(--global-color-accent) !important;
+    color: white !important;
+    border-radius: 0 !important;
+    transition: background-color .7s ease !important;
+    transition: color .7s ease !important;
+
+
+  }

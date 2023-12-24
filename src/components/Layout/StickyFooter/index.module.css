@@ -1,0 +1,55 @@
+.footer{
+    background-color: var(--primary-color);
+    padding: 0.7rem;
+
+  }
+
+.static {
+    position: static;
+
+}
+
+.sticky {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  box-shadow: 0 -0.4rem 0.5rem rgba(0, 0, 0, 0.1);
+
+  }
+
+
+
+.iconWrapper{
+    background-color: var(--global-color-accent);
+    width: min-content;
+    display: flex;
+    padding: 0.3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.btn{
+    background-color: var(--global-color-accent);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: var(--global-color-accent) !important;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.upIcon{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    rotate: 90deg;
+
+}

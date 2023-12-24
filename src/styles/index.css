@@ -1,0 +1,7 @@
+@import url(./reset.css);
+@import url(./variables.css);
+
+
+.gBGTransition {
+    transition:background-color .7s ease;
+}

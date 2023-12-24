@@ -1,0 +1,42 @@
+.footer {
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+    
+}
+
+.iconWrapper{
+    background-color: var(--global-color);
+    width: min-content;
+    display: flex;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+}
+
+.iconWrapper:hover{
+    background-color: var(--global-color-accent);
+}
+
+.iconWrapper:hover svg{
+    fill: white;
+    
+}
+
+.iconContainer {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.btn{
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 100%;
+    width: 105%;
+    min-height: 100%;
+    height: 45px;
+}
+
+.btn:hover{
+    background-color: var(--global-color-accent) !important;
+}

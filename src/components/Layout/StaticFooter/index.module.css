@@ -1,0 +1,127 @@
+.footer{
+  position: relative;
+  background-color: black;
+  background-image: url("../../../assets/images/footerImage.jpg");
+  background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+
+    font-size: 1
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity (the last value) to control the overlay darkness */
+}
+
+.paragraph1{
+  font-size: 1rem;
+  color: var(--secondary-color);
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+.imageContainer {
+  max-width: 15rem; /* Set the maximum width of the container */
+  min-width: 12rem;
+  margin: 0 auto; /* Center the container on the page (optional) */
+  /* transition: all 0.5s ease-in-out; */
+}
+
+.containedImage {
+  width: 100%; /* Make the image take up 100% of the container's width */
+  height: auto; /* Maintain the aspect ratio of the image */
+  display: block; /* Remove any default inline styles on the image */
+}
+
+.btn{
+background-color: var(--primary-color) !important;
+color: var(--global-color-accent) !important;
+font-size: 1rem;
+font-weight: bold;
+height: 3rem;
+padding-right: 2rem;
+padding-left: 2rem;
+}
+
+.btn:hover{
+  background-color: var(--global-color-accent) !important;
+  color: white !important;
+  }
+
+
+ 
+
+  .listContainer h2{
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .listContainer ul {
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    gap: 1rem;
+  }
+
+  .listContainer li a {
+font-size: 1.2rem;
+font-weight: 400;
+color: var(--secondary-color) !important;
+  }
+
+  .listContainer li a:hover {
+
+    color: var(--primary-color) !important;
+      }
+
+.contactList{
+  padding-bottom: 3rem;
+  border-bottom: 0.2rem solid var(--primary-color);
+  align-items: flex-start !important;
+}
+
+
+      .contactList li a {
+        display: flex;
+        gap: 0.5rem;
+      }
+
+      .contactList li a:hover {
+   color: var(--secondary-color) !important;
+      }
+
+
+      .contactList li a svg {
+color: var(--primary-color);
+      }
+
+
+      .iconWrapper{
+        background-color: var(--global-color);
+        width: min-content;
+        display: flex;
+        padding: 0.6rem;
+        border-radius: 0.6rem;
+    }
+    
+    .iconWrapper:hover{
+        background-color: var(--global-color-accent);
+    }
+    
+    .iconWrapper:hover svg{
+        fill: white;
+        
+    }
+    
+    .iconContainer {
+        display: flex;
+        gap: 0.6rem;
+    }
