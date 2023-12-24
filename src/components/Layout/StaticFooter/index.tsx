@@ -1,7 +1,7 @@
 import { containerSpace } from "../../../globalVariables";
 import styles from "./index.module.css";
 import { Col, Flex, Row } from "antd";
-import logo from "../../../Assets/images/Logo.png";
+import logo from "../../../assets/images/Logo.png";
 import { Link } from "react-router-dom";
 import { Button } from "antd";
 // import { useTranslation } from "react-i18next";
