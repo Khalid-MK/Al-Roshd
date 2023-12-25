@@ -3,8 +3,12 @@ import { GlobalOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 import { Dropdown, Flex, Space } from "antd";
 
+import { useAppDispatch } from "../../../store/hooks";
+import { changeDirection } from "../../../store/features/DirectionSlice";
+
 const LanguageDropdown = () => {
   const { i18n } = useTranslation();
+  const dispacth = useAppDispatch();
 
   const items: MenuProps["items"] = [
     {
@@ -21,6 +25,9 @@ const LanguageDropdown = () => {
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
+    lng === "ar"
+      ? dispacth(changeDirection("rtl"))
+      : dispacth(changeDirection("ltr"));
   };
 
   return (
