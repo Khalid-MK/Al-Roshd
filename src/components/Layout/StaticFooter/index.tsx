@@ -1,4 +1,4 @@
-import { containerSpace } from "../../../globalVariables";
+import { underXXlcontainerSpace } from "../../../globalVariables";
 import styles from "./index.module.css";
 import { Col, Flex, Row } from "antd";
 import logo from "../../../assets/images/logo.png";
@@ -15,7 +15,7 @@ const StaticFooter = () => {
     <footer className={styles.footer}>
       <div className={styles.overlay}></div>
       <Row justify={"space-between"} align="top" wrap>
-        <Col span={6} push={containerSpace}>
+        <Col span={6} push={underXXlcontainerSpace}>
           <Flex align="flex-start" vertical gap="middle">
             <Link to="/">
               <div className={styles.imageContainer}>
@@ -33,7 +33,7 @@ const StaticFooter = () => {
             </Button>
           </Flex>
         </Col>
-        <Col span={13} pull={containerSpace}>
+        <Col span={13} pull={underXXlcontainerSpace}>
           <Row justify="space-between">
             <Col span={7}>
               <Flex

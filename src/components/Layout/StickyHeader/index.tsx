@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import type { MenuProps } from "antd";
 import { CaretDownOutlined } from "@ant-design/icons";
 
-import { containerSpace } from "../../../globalVariables";
+import { underXXlcontainerSpace } from "../../../globalVariables";
 import logo from "../../../assets/images/logo.png";
 
 import styles from "./index.module.css";
@@ -132,7 +132,7 @@ const StickyHeader = () => {
       className={`${styles.nav} ${isSticky ? styles.sticky : ""}`}
     >
       <Row justify={"space-between"} align="middle" wrap>
-        <Col push={containerSpace}>
+        <Col push={underXXlcontainerSpace}>
           <Link to="/">
             <div
               className={`${
@@ -143,7 +143,7 @@ const StickyHeader = () => {
             </div>
           </Link>
         </Col>
-        <Col pull={containerSpace}>
+        <Col pull={underXXlcontainerSpace}>
           <ul className={styles.list}>
             <li>
               <Link className={styles.itemStyle} to="/">

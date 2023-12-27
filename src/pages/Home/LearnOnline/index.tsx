@@ -1,12 +1,12 @@
 import { Col, Flex, Row } from "antd";
-import { containerSpace } from "../../../globalVariables";
+import { underXXlcontainerSpace } from "../../../globalVariables";
 import { Button } from "antd";
 import styles from "./index.module.css";
 const LearnOnline = () => {
   return (
     <Row wrap className={styles.container}>
       <Col
-        push={containerSpace}
+        push={underXXlcontainerSpace}
         lg={12}
         md={24}
         className={styles.videoContainer}
@@ -19,7 +19,7 @@ const LearnOnline = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         ></iframe>
       </Col>
-      <Col pull={containerSpace} lg={12} md={24}>
+      <Col pull={underXXlcontainerSpace} lg={12} md={24}>
         <section>
           <Flex vertical gap={"1.5rem"} className={styles.section}>
             <h2>Learn Quran Online | Online Quran Classes</h2>

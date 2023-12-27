@@ -6,7 +6,7 @@ import { BackwardOutlined } from "@ant-design/icons";
 
 import styles from "./index.module.css";
 import SocialMediaSVGIcon from "../../../assets/svgs/SocialMediaSVGIcon";
-import { containerSpace } from "../../../globalVariables";
+import { underXXlcontainerSpace } from "../../../globalVariables";
 
 const StickyFooter = () => {
   const { t } = useTranslation();
@@ -24,7 +24,7 @@ const StickyFooter = () => {
       <nav style={{ height: footerHeight }}></nav>
       <nav ref={footerRef} className={`${styles.footer} ${styles.sticky}`}>
         <Row justify="space-between" align="middle" wrap>
-          <Col push={containerSpace}>
+          <Col push={underXXlcontainerSpace}>
             <a href="javascript void(0)" className={`${styles.iconWrapper}`}>
               <SocialMediaSVGIcon
                 type="whatsapp"
@@ -43,7 +43,7 @@ const StickyFooter = () => {
               {t("BookAFreeTrialNow")}
             </Button>
           </Col>
-          <Col pull={containerSpace}>
+          <Col pull={underXXlcontainerSpace}>
             <a href="javascript void(0)" className={`${styles.iconWrapper}`}>
               <BackwardOutlined className={styles.upIcon} />
             </a>

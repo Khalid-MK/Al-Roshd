@@ -5,3 +5,8 @@
 .gBGTransition {
     transition:background-color .7s ease;
 }
+
+
+button span{
+    text-wrap: wrap;
+}
