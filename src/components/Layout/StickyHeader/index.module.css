@@ -1,5 +1,6 @@
 .nav{
   padding:  1rem 0;
+  overflow-x: clip;
 }
 
 .sticky {
@@ -108,8 +109,9 @@ row-gap: 1.3rem;
 .minWidthMenu{
   position: absolute;
   background-color: var(--secondary-color);
-  right: 0;
-  transform: translateX(8.2%); 
+  /* right: 0;
+  transform: translateX(8.2%);  */
+
   width: 100vw;
   z-index:  9999;
   transition: height 0.2s ease-in-out;

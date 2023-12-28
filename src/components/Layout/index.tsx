@@ -1,20 +1,20 @@
-import { Outlet } from "react-router-dom";
+// import { Outlet } from "react-router-dom";
 
 import StaticHeader from "./StaticHeader";
 import StickyHeader from "./StickyHeader";
-import StickyFooter from "./StickyFooter";
+// import StickyFooter from "./StickyFooter";
 import StaticFooter from "./StaticFooter";
-import CopyRightsFooter from "./CopyRightsFooter";
+// import CopyRightsFooter from "./CopyRightsFooter";
 const Layout = () => {
   return (
     <>
       {/* // Global PUSHPULL Value Const */}
       <StaticHeader />
       <StickyHeader />
-      {/* <Outlet />
+      {/* <Outlet /> */}
       <StaticFooter />
-      <CopyRightsFooter />
-      <StickyFooter /> */}
+      {/* <CopyRightsFooter /> */}
+      {/* <StickyFooter /> */}
     </>
   );
 };

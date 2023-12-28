@@ -26,6 +26,7 @@ import {
   SettingOutlined,
 } from "@ant-design/icons";
 import { Menu } from "antd";
+import { useAppSelector } from "../../../store/hooks";
 
 type MenuItem = Required<MenuProps>["items"][number];
 
@@ -35,6 +36,7 @@ const StickyHeader = () => {
   const [isSticky, setIsSticky] = useState(false);
   const navbarRef = useRef<HTMLDivElement>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const direction = useAppSelector((state) => state.direction.value);
 
   useEffect(() => {
     // Function to update screenWidth when the window is resized
@@ -387,6 +389,12 @@ const StickyHeader = () => {
                     className={styles.minWidthMenu}
                     overflowedIndicator
                     style={{
+                      right: direction === "ltr" ? "0" : "unset",
+                      left: direction === "ltr" ? "unset" : "0",
+                      transform:
+                        direction === "ltr"
+                          ? "translateX(9%) "
+                          : "translateX(-9%)",
                       marginTop: isSticky ? "3%" : "5%",
                       height: isMenuOpen ? "100vh" : "0",
                     }}
