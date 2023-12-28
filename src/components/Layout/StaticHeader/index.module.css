@@ -50,13 +50,6 @@
 @media only screen and (max-width: 768px) {
  
 
-    /* .iconWrapper{
-        background-color: var(--global-color);
-        width: min-content;
-        display: flex;
-        padding: 0.6rem;
-        border-radius: 0.6rem;
-    } */
 
     .iconWrapper, .langIcon {
   scale: 0.8;

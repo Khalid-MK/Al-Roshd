@@ -11,10 +11,10 @@ const Layout = () => {
       {/* // Global PUSHPULL Value Const */}
       <StaticHeader />
       <StickyHeader />
-      <Outlet />
+      {/* <Outlet />
       <StaticFooter />
       <CopyRightsFooter />
-      <StickyFooter />
+      <StickyFooter /> */}
     </>
   );
 };

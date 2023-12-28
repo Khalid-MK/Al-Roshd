@@ -1,6 +1,6 @@
 import { Button } from "antd";
-import { useTranslation } from "react-i18next";
 import { Col, Row } from "antd";
+import { useTranslation } from "react-i18next";
 
 import {
   underXXlcontainerSpace,
@@ -70,7 +70,7 @@ const StaticHeader = () => {
               xxl: "end",
               xl: "end",
               lg: "end",
-              md: "center",
+              md: "end",
               sm: "center",
               xs: "center",
             }}
