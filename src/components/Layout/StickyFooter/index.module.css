@@ -1,6 +1,7 @@
 .footer{
     background-color: var(--primary-color);
-    padding: 0.7rem;
+    padding: 0.7rem 0;
+    overflow-x: clip;
 
   }
 

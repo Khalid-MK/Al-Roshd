@@ -6,7 +6,10 @@ import { BackwardOutlined } from "@ant-design/icons";
 
 import styles from "./index.module.css";
 import SocialMediaSVGIcon from "../../../assets/svgs/SocialMediaSVGIcon";
-import { underXXlcontainerSpace } from "../../../globalVariables";
+import {
+  underXXlcontainerSpace,
+  xxlContainerSpace,
+} from "../../../globalVariables";
 
 const StickyFooter = () => {
   const { t } = useTranslation();
@@ -23,30 +26,95 @@ const StickyFooter = () => {
     <>
       <nav style={{ height: footerHeight }}></nav>
       <nav ref={footerRef} className={`${styles.footer} ${styles.sticky}`}>
-        <Row justify="space-between" align="middle" wrap>
-          <Col push={underXXlcontainerSpace}>
-            <a href="javascript void(0)" className={`${styles.iconWrapper}`}>
-              <SocialMediaSVGIcon
-                type="whatsapp"
-                color="white"
-                isColorCssVar={false}
-                size="25"
-              />
-            </a>
-          </Col>
-          <Col>
-            <Button
-              type="primary"
-              size="large"
-              className={`${styles.btn} gBGTransition`}
+        <Row
+          justify={{
+            md: "space-between",
+            sm: "center",
+            xs: "center",
+          }}
+          gutter={[0, 8]}
+          align="middle"
+          wrap
+        >
+          <Col
+            xxl={{ span: 6, push: xxlContainerSpace, pull: 0 }}
+            xl={{ span: 6, push: underXXlcontainerSpace, pull: 0 }}
+            lg={{ span: 6, push: underXXlcontainerSpace, pull: 0 }}
+            md={{ span: 6, push: underXXlcontainerSpace, pull: 0 }}
+            sm={{
+              span: 20,
+            }}
+            xs={{
+              span: 20,
+            }}
+          >
+            <Row
+              justify={{
+                md: "start",
+                sm: "center",
+                xs: "center",
+              }}
             >
-              {t("BookAFreeTrialNow")}
-            </Button>
+              <a href="javascript void(0)" className={`${styles.iconWrapper}`}>
+                <SocialMediaSVGIcon
+                  type="whatsapp"
+                  color="white"
+                  isColorCssVar={false}
+                  size="25"
+                />
+              </a>
+            </Row>
           </Col>
-          <Col pull={underXXlcontainerSpace}>
-            <a href="javascript void(0)" className={`${styles.iconWrapper}`}>
-              <BackwardOutlined className={styles.upIcon} />
-            </a>
+          <Col
+            md={{
+              span: 6,
+            }}
+            sm={{
+              span: 20,
+            }}
+            xs={{
+              span: 20,
+            }}
+          >
+            <Row
+              justify={{
+                md: "center",
+                sm: "center",
+                xs: "center",
+              }}
+            >
+              <Button
+                type="primary"
+                size="large"
+                className={`${styles.btn} gBGTransition`}
+              >
+                {t("BookAFreeTrialNow")}
+              </Button>
+            </Row>
+          </Col>
+          <Col
+            xxl={{ span: 6, pull: xxlContainerSpace, push: 0 }}
+            xl={{ span: 6, pull: underXXlcontainerSpace, push: 0 }}
+            lg={{ span: 6, pull: underXXlcontainerSpace, push: 0 }}
+            md={{ span: 6, pull: underXXlcontainerSpace, push: 0 }}
+            sm={{
+              span: 20,
+            }}
+            xs={{
+              span: 20,
+            }}
+          >
+            <Row
+              justify={{
+                md: "end",
+                sm: "center",
+                xs: "center",
+              }}
+            >
+              <a href="javascript void(0)" className={`${styles.iconWrapper}`}>
+                <BackwardOutlined className={styles.upIcon} />
+              </a>
+            </Row>
           </Col>
         </Row>
       </nav>

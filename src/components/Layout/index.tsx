@@ -2,9 +2,9 @@
 
 import StaticHeader from "./StaticHeader";
 import StickyHeader from "./StickyHeader";
-// import StickyFooter from "./StickyFooter";
+import StickyFooter from "./StickyFooter";
 import StaticFooter from "./StaticFooter";
-// import CopyRightsFooter from "./CopyRightsFooter";
+import CopyRightsFooter from "./CopyRightsFooter";
 const Layout = () => {
   return (
     <>
@@ -13,8 +13,8 @@ const Layout = () => {
       <StickyHeader />
       {/* <Outlet /> */}
       <StaticFooter />
-      {/* <CopyRightsFooter /> */}
-      {/* <StickyFooter /> */}
+      <CopyRightsFooter />
+      <StickyFooter />
     </>
   );
 };
