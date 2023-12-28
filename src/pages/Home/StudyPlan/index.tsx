@@ -3,7 +3,7 @@ import EqualParts from "../../../components/Layout/Components/EqualParts";
 import styles from "./index.module.css";
 import StudyPlanImg from "../../../assets/images/study-plan.svg";
 import CheckMark from "../../../assets/svgs/CheckMark";
-import { topBottomPadding } from "../../../globalVariables";
+import { padding } from "../../../globalVariables";
 import { useAppSelector } from "../../../store/hooks";
 
 const StudyPlan = () => {
@@ -29,8 +29,8 @@ const StudyPlan = () => {
       justify={"start"}
       align={"bottom"}
       style={{
-        paddingLeft: direction === "ltr" ? `${topBottomPadding}rem` : "unset",
-        paddingRight: direction === "rtl" ? `${topBottomPadding}rem` : "unset",
+        paddingLeft: direction === "ltr" ? `${padding}rem` : "unset",
+        paddingRight: direction === "rtl" ? `${padding}rem` : "unset",
       }}
       className={styles.textContainer}
       gutter={[0, 16]}

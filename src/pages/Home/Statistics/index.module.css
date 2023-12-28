@@ -1,0 +1,37 @@
+.secionContainer{
+background-color: var(--secondary-color);
+}
+
+
+.imgContainer{
+    width: 5rem;
+}
+
+.imgContainer img{
+ width: 100%;
+ height: 1000%;
+ filter: saturate(red);   
+}
+
+.colContainer label{
+    font-size: 2rem;
+    color: var(--global-color-accent);
+    font-weight: bold;
+}
+
+.colContainer span{
+    color: var(--global-color-accent);
+}
+
+
+.divider{
+    height: 100%;
+
+}
+
+
+@media only screen and (max-width: 991px) {
+    .divider {
+     display: none;
+    }
+  }

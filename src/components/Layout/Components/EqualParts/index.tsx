@@ -1,6 +1,6 @@
 import { Col, Row } from "antd";
 import {
-  topBottomPadding,
+  padding,
   underXXlcontainerSpace,
   xxlContainerSpace,
 } from "../../../../globalVariables";
@@ -11,11 +11,10 @@ const EqualParts: FC<IEqualParts> = ({ firstComp, secondComp }) => {
   return (
     <Row
       justify="space-between"
-      style={{ padding: `${topBottomPadding}rem 0` }}
+      style={{ padding: `${padding}rem 0` }}
       gutter={[0, 30]}
     >
       <Col
-        // style={{ backgroundColor: "red" }}
         xxl={{ span: 9, push: xxlContainerSpace, pull: 0 }}
         xl={{ span: 10, push: underXXlcontainerSpace, pull: 0 }}
         lg={{ span: 10, push: underXXlcontainerSpace, pull: 0 }}
@@ -38,7 +37,6 @@ const EqualParts: FC<IEqualParts> = ({ firstComp, secondComp }) => {
         {firstComp}
       </Col>
       <Col
-        // style={{ backgroundColor: "blue" }}
         xxl={{ span: 9, push: 0, pull: xxlContainerSpace }}
         xl={{ span: 10, push: 0, pull: underXXlcontainerSpace }}
         lg={{ span: 10, push: 0, pull: underXXlcontainerSpace }}

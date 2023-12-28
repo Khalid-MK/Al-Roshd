@@ -2,7 +2,7 @@ import { Button, Col, Row } from "antd";
 
 import AboutImage from "../../../assets/images/about-icon.png";
 import {
-  topBottomPadding,
+  padding,
   underXXlcontainerSpace,
   xxlContainerSpace,
 } from "../../../globalVariables";
@@ -15,7 +15,7 @@ const AboutUs = () => {
       justify="space-between"
       gutter={[0, 16]}
       wrap
-      style={{ padding: `${topBottomPadding}rem 0` }}
+      style={{ padding: `${padding}rem 0` }}
     >
       <Col
         xxl={{ span: 4, push: xxlContainerSpace, pull: 0 }}
