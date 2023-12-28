@@ -12,9 +12,7 @@ const AboutUs = () => {
   return (
     <Row
       className={styles.container}
-      justify={{
-        xxl: "space-between",
-      }}
+      justify="space-between"
       gutter={[0, 16]}
       wrap
       style={{ padding: `${topBottomPadding}rem 0` }}
