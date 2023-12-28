@@ -4,14 +4,16 @@ import LearnOnline from "./LearnOnline";
 import WhyUs from "./WhyUs";
 import HomeSteps from "./HomeSteps";
 import AboutUs from "./AboutUs";
+import StudyPlan from "./StudyPlan";
 
 const Home = () => {
   return (
     <Fragment>
       <HomeCarousel />
-      <LearnOnline />
+      {/* <LearnOnline /> */}
       <WhyUs />
       <HomeSteps />
+      <StudyPlan />
       <AboutUs />
     </Fragment>
   );
