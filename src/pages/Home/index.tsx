@@ -3,6 +3,7 @@ import HomeCarousel from "./HomeCarousel";
 import LearnOnline from "./LearnOnline";
 import WhyUs from "./WhyUs";
 import HomeSteps from "./HomeSteps";
+import AboutUs from "./AboutUs";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <LearnOnline />
       <WhyUs />
       <HomeSteps />
+      <AboutUs />
     </Fragment>
   );
 };

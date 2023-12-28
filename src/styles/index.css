@@ -13,3 +13,31 @@ button {
 button span{
     text-wrap: wrap;
 }
+
+.paragraphStyle1    {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 2rem;
+        color: var(--global-color-accent);
+}
+
+
+
+.buttonStyle1 {
+    background-color: var(--global-color-accent) !important;
+    color: white !important;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 2.8rem;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+    width: fit-content;
+    }
+    
+
+    
+.buttonStyle1:hover {
+    background-color: var(--primary-color) !important;
+   
+    }
+    

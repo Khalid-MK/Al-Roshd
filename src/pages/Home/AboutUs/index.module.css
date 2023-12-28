@@ -1,0 +1,22 @@
+.textSection h2{
+    width: fit-content;
+color: var(--global-color-accent);
+font-size: 1.6rem;
+font-weight: 900;
+line-height: 1.3em;
+text-decoration: none;
+position: relative;
+margin-bottom: 2rem;
+
+}
+
+.textSection h2:after {
+    content: '';
+    width: 75%;
+    position: absolute;
+    left: 0;
+    top: 3rem;
+    border-width: 0 0 0.2rem;
+    border-style: solid;
+    color: var(--primary-color);
+}
