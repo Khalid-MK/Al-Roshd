@@ -23,6 +23,7 @@
 
   .stickyImageContainer {
     max-width: 10rem; /* Set the maximum width of the container */
+    min-width: 8rem;
     margin: 0 auto; /* Center the container on the page (optional) */
     transition: all 0.5s ease-in-out;
   }

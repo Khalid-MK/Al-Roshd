@@ -7,8 +7,9 @@
     background-size: cover;
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
-
-    font-size: 1
+    font-size: 1;
+    column-gap: 10rem;
+  overflow-x: clip;
 }
 
 .overlay {
@@ -29,7 +30,7 @@
 
 .imageContainer {
   max-width: 15rem; /* Set the maximum width of the container */
-  min-width: 12rem;
+  min-width: 10rem;
   margin: 0 auto; /* Center the container on the page (optional) */
   /* transition: all 0.5s ease-in-out; */
 }
@@ -45,9 +46,6 @@ background-color: var(--primary-color) !important;
 color: var(--global-color-accent) !important;
 font-size: 1rem;
 font-weight: bold;
-height: 3rem;
-padding-right: 2rem;
-padding-left: 2rem;
 }
 
 .btn:hover{
@@ -86,6 +84,7 @@ color: var(--secondary-color) !important;
   padding-bottom: 3rem;
   border-bottom: 0.2rem solid var(--primary-color);
   align-items: flex-start !important;
+  width: 100%;
 }
 
 
@@ -124,4 +123,29 @@ color: var(--primary-color);
     .iconContainer {
         display: flex;
         gap: 0.6rem;
+    }
+
+
+    @media only screen and (max-width: 991px) and (min-width: 768px){
+
+      .paragraph1{
+        font-size: 0.8rem;
+      }
+      
+
+      .listContainer h2{
+        font-size: 1.6rem;
+      }
+
+      .listContainer li a {
+    font-size: 0.9rem;
+      }
+    
+
+    }
+
+    @media only screen and (max-width: 768px) {
+      .paragraph1 {
+        text-align: center ;
+      }
     }

@@ -1,4 +1,7 @@
-import { underXXlcontainerSpace } from "../../../globalVariables";
+import {
+  underXXlcontainerSpace,
+  xxlContainerSpace,
+} from "../../../globalVariables";
 import styles from "./index.module.css";
 import { Col, Flex, Row } from "antd";
 import logo from "../../../assets/images/logo.png";
@@ -14,9 +17,31 @@ const StaticFooter = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.overlay}></div>
-      <Row justify={"space-between"} align="top" wrap>
-        <Col span={6} push={underXXlcontainerSpace}>
-          <Flex align="flex-start" vertical gap="middle">
+      <Row justify={"space-between"} align="top" wrap gutter={[0, 50]}>
+        <Col
+          xxl={{ span: 7, push: xxlContainerSpace, pull: 0 }}
+          xl={{ span: 7, push: underXXlcontainerSpace, pull: 0 }}
+          lg={{ span: 7, push: underXXlcontainerSpace, pull: 0 }}
+          md={{ span: 6, push: underXXlcontainerSpace, pull: 0 }}
+          sm={{
+            span: 20,
+            push: underXXlcontainerSpace,
+            pull: underXXlcontainerSpace,
+          }}
+          xs={{
+            span: 20,
+            push: underXXlcontainerSpace,
+            pull: underXXlcontainerSpace,
+          }}
+        >
+          <Row
+            gutter={[0, 15]}
+            justify={{
+              md: "start",
+              sm: "center",
+              xs: "center",
+            }}
+          >
             <Link to="/">
               <div className={styles.imageContainer}>
                 <img src={logo} alt="Logo" className={styles.containedImage} />
@@ -28,14 +53,33 @@ const StaticFooter = () => {
               globe for many years. Undoubtedly, Mishkah Academy has quickly
               become one of the Leading Online Quran & Arabic Institutes.
             </p>
-            <Button type="primary" className={`${styles.btn}`}>
+            <Button size="large" type="primary" className={`${styles.btn}`}>
               {"Get Started Now"}
             </Button>
-          </Flex>
+          </Row>
         </Col>
-        <Col span={13} pull={underXXlcontainerSpace}>
-          <Row justify="space-between">
-            <Col span={7}>
+        <Col
+          xxl={{ span: 13, push: 0, pull: xxlContainerSpace }}
+          xl={{ span: 13, push: 0, pull: underXXlcontainerSpace }}
+          lg={{ span: 13, push: 0, pull: underXXlcontainerSpace }}
+          md={{ span: 12, push: 0, pull: underXXlcontainerSpace }}
+          sm={{
+            span: 20,
+            push: underXXlcontainerSpace,
+            pull: underXXlcontainerSpace,
+          }}
+          xs={{
+            span: 20,
+            push: underXXlcontainerSpace,
+            pull: underXXlcontainerSpace,
+          }}
+        >
+          <Row
+            justify={{ md: "space-between", sm: "center", xs: "center" }}
+            wrap
+            gutter={[0, 80]}
+          >
+            <Col md={{ span: 6 }} sm={{ span: 20 }} xs={{ span: 20 }}>
               <Flex
                 align="center"
                 justify="flex-start"
@@ -57,7 +101,7 @@ const StaticFooter = () => {
                 </ul>
               </Flex>
             </Col>
-            <Col span={7}>
+            <Col md={{ span: 6 }} sm={{ span: 20 }} xs={{ span: 20 }}>
               <Flex
                 align="center"
                 justify="flex-start"
@@ -85,7 +129,7 @@ const StaticFooter = () => {
                 </ul>
               </Flex>
             </Col>
-            <Col span={10}>
+            <Col md={{ span: 9 }} sm={{ span: 20 }} xs={{ span: 20 }}>
               <Flex
                 align="center"
                 justify="center"

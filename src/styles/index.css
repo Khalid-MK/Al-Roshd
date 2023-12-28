@@ -6,6 +6,9 @@
     transition:background-color .7s ease;
 }
 
+button {
+    height: auto !important; 
+}
 
 button span{
     text-wrap: wrap;
