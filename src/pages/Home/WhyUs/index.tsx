@@ -7,7 +7,19 @@ const WhyUs = () => {
       <div className={styles.header}>
         <h2>Why Us</h2>
       </div>
-      <Row justify="space-between" wrap className={styles.rowContainer}>
+      <Row
+        justify={{
+          xxl: "space-between",
+          xl: "space-between",
+          lg: "space-between",
+          md: "space-between",
+          sm: "center",
+          xs: "center",
+        }}
+        wrap
+        className={styles.rowContainer}
+        gutter={[0, 30]}
+      >
         <Col md={8}>
           <Flex
             vertical
