@@ -1,6 +1,6 @@
 import { Button, Flex } from "antd";
 
-import CarouselHome from "../../../components/Carousel/CarouselHome";
+import CarouselHome from "../../../components/Carousel/MultipleCarousel";
 import car1 from "../../../assets/images/carousel11.jpg";
 import car2 from "../../../assets/images/carousel12.jpg";
 import car3 from "../../../assets/images/carousel13.jpg";
@@ -104,7 +104,7 @@ const Courses = () => {
     </Flex>,
   ];
   return (
-    <div style={{ padding: `${padding}rem 0` }}>
+    <Flex vertical gap={"2rem"} style={{ padding: `${padding}rem 0` }}>
       <h1 className={styles.header}>Our Courses</h1>
       <CarouselHome CarouselItems={CarouselItems} />
       <Flex justify="center">
@@ -112,7 +112,7 @@ const Courses = () => {
           {"See All Courses"}
         </Button>
       </Flex>
-    </div>
+    </Flex>
   );
 };
 

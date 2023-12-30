@@ -32,6 +32,10 @@
     box-sizing: border-box;
   
 }
+.containerClass{
+    min-height: 18rem !important;
+
+}
 
 .customCarouselItem img {
     pointer-events: none;
@@ -40,6 +44,5 @@
 
 
 .sliderClass{
-    overflow: hidden;
     max-width: fit-content;
 }

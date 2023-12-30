@@ -7,8 +7,6 @@ import styles from "./index.module.css";
 import { Button } from "antd";
 
 const HomeCarousel = () => {
-  // return <ACarousel images={[slider1, slider2, slider3, slider4]} />;
-
   return (
     <Carousel autoplay autoplaySpeed={2000}>
       <div>

@@ -2,13 +2,12 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import {
-  padding,
   underXXlcontainerSpace,
   xxlContainerSpace,
-} from "../../globalVariables";
+} from "../../../globalVariables";
 import { FC, ReactNode } from "react";
 import { Col, Row } from "antd";
-import Chveron from "../../assets/svgs/Chveron";
+import Chveron from "../../../assets/svgs/Chveron";
 import styles from "./index.module.css";
 
 const responsive = {
@@ -87,9 +86,9 @@ interface ICarousel {
   CarouselItems?: ReactNode;
 }
 
-const CarouselHome: FC<ICarousel> = ({ CarouselItems }) => {
+const MultipleCarousel: FC<ICarousel> = ({ CarouselItems }) => {
   return (
-    <Row style={{ padding: `${padding}rem 0` }}>
+    <Row>
       <Col
         xxl={{ span: 18, pull: xxlContainerSpace, push: xxlContainerSpace }}
         xl={{
@@ -128,8 +127,8 @@ const CarouselHome: FC<ICarousel> = ({ CarouselItems }) => {
           autoPlay
           autoPlaySpeed={5000}
           centerMode={false}
-          className=""
-          containerClass="container"
+          className={`${styles.xClass}`}
+          containerClass={`${styles.containerClass} container`}
           customButtonGroup={<CustomGroup />}
           customLeftArrow={<></>}
           customRightArrow={<></>}
@@ -162,4 +161,4 @@ const CarouselHome: FC<ICarousel> = ({ CarouselItems }) => {
   );
 };
 
-export default CarouselHome;
+export default MultipleCarousel;

@@ -7,6 +7,7 @@ import AboutUs from "./AboutUs";
 import StudyPlan from "./StudyPlan";
 import Statistics from "./Statistics";
 import Courses from "./Courses";
+import Testimonials from "./Testimonials";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <StudyPlan />
       <Courses />
       <Statistics />
+      <Testimonials />
       <AboutUs />
     </Fragment>
   );
