@@ -8,6 +8,7 @@ import StudyPlan from "./StudyPlan";
 import Statistics from "./Statistics";
 import Courses from "./Courses";
 import Testimonials from "./Testimonials";
+import Tutors from "./Tutors";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Courses />
       <Statistics />
       <Testimonials />
+      <Tutors />
       <AboutUs />
     </Fragment>
   );
