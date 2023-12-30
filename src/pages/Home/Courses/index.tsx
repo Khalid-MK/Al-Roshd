@@ -8,6 +8,7 @@ import car4 from "../../../assets/images/carousel14.jpg";
 import car5 from "../../../assets/images/carousel15.jpg";
 import car6 from "../../../assets/images/carousel16.jpg";
 import styles from "./index.module.css";
+import { padding } from "../../../globalVariables";
 
 const Courses = () => {
   const CarouselItems = [
@@ -102,7 +103,17 @@ const Courses = () => {
       </Button>
     </Flex>,
   ];
-  return <CarouselHome CarouselItems={CarouselItems} />;
+  return (
+    <div style={{ padding: `${padding}rem 0` }}>
+      <h1 className={styles.header}>Our Courses</h1>
+      <CarouselHome CarouselItems={CarouselItems} />
+      <Flex justify="center">
+        <Button size="large" type="primary" className={`buttonStyle1`}>
+          {"See All Courses"}
+        </Button>
+      </Flex>
+    </div>
+  );
 };
 
 export default Courses;

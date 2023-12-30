@@ -1,3 +1,5 @@
+
+
 .itemContainer {
     cursor: pointer ;
 }
@@ -27,4 +29,32 @@
     font-size: 1rem;
     font-weight: bold;
   
+}
+
+
+
+
+.header {
+    width: fit-content;
+color: var(--global-color-accent);
+font-size: 1.6rem;
+font-weight: 900;
+line-height: 1.3em;
+text-decoration: none;
+position: relative;
+text-align: center;
+width: 100%;
+
+}
+
+.header:after {
+    content: '';
+    width: 5%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120%;
+    border-width: 0 0 0.2rem;
+    border-style: solid;
+    color: var(--primary-color);
 }
