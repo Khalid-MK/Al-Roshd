@@ -12,7 +12,13 @@ export interface ISocialMediaSVGIcon extends ISVGIcon {
   type: SocialMediaIconType;
 }
 
+export interface IChevron extends ISVGIcon {
+  direction: "left" | "right";
+  onClick?: () => null;
+}
+
 export interface IEqualParts {
   firstComp: ReactNode;
   secondComp: ReactNode;
+  className?: string;
 }

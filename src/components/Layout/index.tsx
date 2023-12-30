@@ -8,7 +8,6 @@ import CopyRightsFooter from "./CopyRightsFooter";
 const Layout = () => {
   return (
     <>
-      {/* // Global PUSHPULL Value Const */}
       <StaticHeader />
       <StickyHeader />
       <Outlet />

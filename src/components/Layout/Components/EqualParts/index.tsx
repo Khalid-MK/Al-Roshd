@@ -7,12 +7,13 @@ import {
 import { FC } from "react";
 import { IEqualParts } from "../../../../shared/interfaces";
 
-const EqualParts: FC<IEqualParts> = ({ firstComp, secondComp }) => {
+const EqualParts: FC<IEqualParts> = ({ firstComp, secondComp, className }) => {
   return (
     <Row
       justify="space-between"
       style={{ padding: `${padding}rem 0` }}
       gutter={[0, 30]}
+      className={className}
     >
       <Col
         xxl={{ span: 9, push: xxlContainerSpace, pull: 0 }}

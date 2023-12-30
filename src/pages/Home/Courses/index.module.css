@@ -1,0 +1,30 @@
+.itemContainer {
+    cursor: pointer ;
+}
+
+.itemContainer p {
+    text-align: center;
+    color:  var(--primary-color) !important;
+    font-size: 1.1rem;
+
+    font-weight: bold;
+}
+
+
+.littelButton{
+    background-color: var(--secondary-color) !important;
+    color:  var(--primary-color) !important;
+    font-size: 0.7rem;
+    font-weight: bold;
+    width: fit-content;
+    align-self: center;
+    justify-self: center;
+}
+
+.largeButton{
+    background-color: var(--secondary-color) !important;
+    color:  var(--primary-color) !important;
+    font-size: 1rem;
+    font-weight: bold;
+  
+}

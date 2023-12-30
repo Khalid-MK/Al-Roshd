@@ -11,7 +11,6 @@ const CheckMark: FC<ISVGIcon> = ({
   return (
     <svg
       fill={fillColor}
-      xmlns="http://www.w3.org/2000/svg"
       width={`${size}`}
       height={`${size}`}
       viewBox="0 0 15.81 17.87"

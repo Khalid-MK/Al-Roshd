@@ -1,0 +1,45 @@
+.chevronLeft{
+    position: absolute;
+    right:  -2%;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%)
+
+}
+
+.chevronRight{
+    position: absolute;
+    left:  -2%;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.chevronLeft div svg:hover{
+
+    fill: var(--secondary-color) !important ;
+    transition:all .3s ease;
+}
+
+.chevronRight div svg:hover{
+    fill: var(--secondary-color) !important ;
+    transition:all .3s ease;
+}
+
+
+.customCarouselItem{
+    padding: 0 10px; 
+    box-sizing: border-box;
+  
+}
+
+.customCarouselItem img {
+    pointer-events: none;
+
+}
+
+
+.sliderClass{
+    overflow: hidden;
+    max-width: fit-content;
+}
