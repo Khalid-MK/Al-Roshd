@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { Col, Row } from "antd";
+import { Col, Flex, Row } from "antd";
 import { useTranslation } from "react-i18next";
 import { Button } from "antd";
 import { BackwardOutlined } from "@ant-design/icons";
@@ -26,94 +26,53 @@ const StickyFooter = () => {
     <>
       <nav style={{ height: footerHeight }}></nav>
       <nav ref={footerRef} className={`${styles.footer} ${styles.sticky}`}>
-        <Row
-          justify={{
-            md: "space-between",
-            sm: "center",
-            xs: "center",
-          }}
-          gutter={[0, 8]}
-          align="middle"
-          wrap
-        >
+        <Row>
           <Col
-            xxl={{ span: 6, push: xxlContainerSpace, pull: 0 }}
-            xl={{ span: 6, push: underXXlcontainerSpace, pull: 0 }}
-            lg={{ span: 6, push: underXXlcontainerSpace, pull: 0 }}
-            md={{ span: 6, push: underXXlcontainerSpace, pull: 0 }}
-            sm={{
-              span: 20,
-            }}
-            xs={{
-              span: 20,
-            }}
+            xxl={{ push: xxlContainerSpace, pull: xxlContainerSpace }}
+            xl={{ push: underXXlcontainerSpace, pull: underXXlcontainerSpace }}
+            lg={{ push: underXXlcontainerSpace, pull: underXXlcontainerSpace }}
+            md={{ push: underXXlcontainerSpace, pull: underXXlcontainerSpace }}
+            sm={{ push: underXXlcontainerSpace, pull: underXXlcontainerSpace }}
+            xs={{ push: underXXlcontainerSpace, pull: underXXlcontainerSpace }}
+            span={20}
           >
-            <Row
-              justify={{
-                md: "start",
-                sm: "center",
-                xs: "center",
-              }}
-            >
-              <a href="javascript void(0)" className={`${styles.iconWrapper}`}>
-                <SocialMediaSVGIcon
-                  type="whatsapp"
-                  color="white"
-                  isColorCssVar={false}
-                  size="25"
-                />
-              </a>
-            </Row>
-          </Col>
-          <Col
-            md={{
-              span: 6,
-            }}
-            sm={{
-              span: 20,
-            }}
-            xs={{
-              span: 20,
-            }}
-          >
-            <Row
-              justify={{
-                md: "center",
-                sm: "center",
-                xs: "center",
-              }}
-            >
-              <Button
-                type="primary"
-                size="large"
-                className={`${styles.btn} gBGTransition`}
-              >
-                {t("BookAFreeTrialNow")}
-              </Button>
-            </Row>
-          </Col>
-          <Col
-            xxl={{ span: 6, pull: xxlContainerSpace, push: 0 }}
-            xl={{ span: 6, pull: underXXlcontainerSpace, push: 0 }}
-            lg={{ span: 6, pull: underXXlcontainerSpace, push: 0 }}
-            md={{ span: 6, pull: underXXlcontainerSpace, push: 0 }}
-            sm={{
-              span: 20,
-            }}
-            xs={{
-              span: 20,
-            }}
-          >
-            <Row
-              justify={{
-                md: "end",
-                sm: "center",
-                xs: "center",
-              }}
-            >
-              <a href="javascript void(0)" className={`${styles.iconWrapper}`}>
-                <BackwardOutlined className={styles.upIcon} />
-              </a>
+            <Row justify={"space-between"} gutter={[0, 8]} align="middle" wrap>
+              <Col span={6}>
+                <Flex justify="start">
+                  <a
+                    href="javascript void(0)"
+                    className={`${styles.iconWrapper}`}
+                  >
+                    <SocialMediaSVGIcon
+                      type="whatsapp"
+                      color="white"
+                      isColorCssVar={false}
+                      size="25"
+                    />
+                  </a>
+                </Flex>
+              </Col>
+              <Col span={6}>
+                <Flex justify="center">
+                  <Button
+                    type="primary"
+                    size="large"
+                    className={`${styles.btn} gBGTransition`}
+                  >
+                    {t("BookAFreeTrialNow")}
+                  </Button>
+                </Flex>
+              </Col>
+              <Col span={6}>
+                <Flex justify="end">
+                  <a
+                    href="javascript void(0)"
+                    className={`${styles.iconWrapper}`}
+                  >
+                    <BackwardOutlined className={styles.upIcon} />
+                  </a>
+                </Flex>
+              </Col>
             </Row>
           </Col>
         </Row>
