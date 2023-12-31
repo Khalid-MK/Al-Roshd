@@ -22,3 +22,7 @@ export interface IEqualParts {
   secondComp: ReactNode;
   className?: string;
 }
+
+export interface ICarousel {
+  CarouselItems?: ReactNode;
+}

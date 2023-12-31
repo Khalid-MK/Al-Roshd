@@ -8,16 +8,11 @@
 
 
 .carouselItemContainer{
-    /* border: 0.2rem solid var(--primary-color); */
-    /* border-radius: 2rem; */
     padding: 0.7rem;
     background-color: white;
 }
 
 
-/* .carouselItemContainer img{
- border-radius: 50%;
-} */
 
 
 .carouselItemContainer a{

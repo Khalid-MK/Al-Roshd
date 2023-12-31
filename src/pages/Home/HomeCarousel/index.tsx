@@ -1,84 +1,205 @@
+import { useEffect, useState } from "react";
+
+import { Button, Flex } from "antd";
+
 import slider1 from "../../../assets/images/general-hero-slide-desktop.svg";
 import slider2 from "../../../assets/images/Quran-desktop-slider.svg";
 import slider3 from "../../../assets/images/Arabic-language-desktop-slider.svg";
 import slider4 from "../../../assets/images/Islamic-studies-desktop-slider.svg";
-import { Carousel } from "antd";
+import slider22 from "../../../assets/images/Arabic-language-courses-mobile-slider.svg";
+import OneItemCarousel from "../../../components/Carousel/OneItemCarousel";
 import styles from "./index.module.css";
-import { Button } from "antd";
 
 const HomeCarousel = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const LargeCarouselItems = [
+    <div className={styles.carouselLargeItemsContainer}>
+      <img src={slider1} alt="slider1" />
+      <Flex
+        vertical
+        justify="center"
+        gap={"1rem"}
+        className={styles.textLargeItemsContainer}
+      >
+        <h3>Online Quran, Arabic & Islamic Studies Courses</h3>
+        <p>
+          Your Quran, Tajweed, Arabic & Islamic Studies Journey starts here with
+          Mishkah Academy.
+        </p>
+        <Button size="large" type="primary" className="buttonStyle1">
+          Learn More
+        </Button>
+      </Flex>
+    </div>,
+    <div className={styles.carouselLargeItemsContainer}>
+      <img src={slider2} alt="slider2" />
+      <Flex
+        vertical
+        justify="center"
+        gap={"1rem"}
+        className={styles.textLargeItemsContainer}
+      >
+        <h3>Online Quran, Arabic & Islamic Studies Courses</h3>
+        <p>
+          Your Quran, Tajweed, Arabic & Islamic Studies Journey starts here with
+          Mishkah Academy.
+        </p>
+        <Button size="large" type="primary" className="buttonStyle1">
+          Learn More
+        </Button>
+      </Flex>
+    </div>,
+    <div className={styles.carouselLargeItemsContainer}>
+      <img src={slider3} alt="slider3" />
+      <Flex
+        vertical
+        justify="center"
+        gap={"1rem"}
+        className={styles.textLargeItemsContainer}
+      >
+        <h3>Online Quran, Arabic & Islamic Studies Courses</h3>
+        <p>
+          Your Quran, Tajweed, Arabic & Islamic Studies Journey starts here with
+          Mishkah Academy.
+        </p>
+        <Button size="large" type="primary" className="buttonStyle1">
+          Learn More
+        </Button>
+      </Flex>
+    </div>,
+    <div className={styles.carouselLargeItemsContainer}>
+      <img src={slider4} alt="slider4" />
+      <Flex
+        vertical
+        justify="center"
+        gap={"1rem"}
+        className={styles.textLargeItemsContainer}
+      >
+        <h3>Online Quran, Arabic & Islamic Studies Courses</h3>
+        <p>
+          Your Quran, Tajweed, Arabic & Islamic Studies Journey starts here with
+          Mishkah Academy.
+        </p>
+        <Button size="large" type="primary" className="buttonStyle1">
+          Learn More
+        </Button>
+      </Flex>
+    </div>,
+  ];
+
+  const SmallCarouselItems = [
+    <div
+      style={{ backgroundImage: `url(${slider22})` }}
+      className={styles.carouselSmallSizeContainer}
+    >
+      <Flex style={{ height: "100%" }} justify="flex-end">
+        <Flex
+          vertical
+          justify="flex-start"
+          align="center"
+          className={styles.textSmallSizeContainer}
+          gap={"1rem"}
+        >
+          <h3>Online Quran, Arabic & Islamic Studies Courses</h3>
+          <p>
+            Your Quran, Tajweed, Arabic & Islamic Studies Journey starts here
+            with Mishkah Academy.
+          </p>
+          <Button size="large" type="primary" className="buttonStyle1">
+            Learn More
+          </Button>
+        </Flex>
+      </Flex>
+    </div>,
+    <div
+      style={{ backgroundImage: `url(${slider22})` }}
+      className={styles.carouselSmallSizeContainer}
+    >
+      <Flex style={{ height: "100%" }} justify="flex-end">
+        <Flex
+          vertical
+          justify="flex-start"
+          align="center"
+          className={styles.textSmallSizeContainer}
+          gap={"1rem"}
+        >
+          <h3>Online Quran, Arabic & Islamic Studies Courses</h3>
+          <p>
+            Your Quran, Tajweed, Arabic & Islamic Studies Journey starts here
+            with Mishkah Academy.
+          </p>
+          <Button size="large" type="primary" className="buttonStyle1">
+            Learn More
+          </Button>
+        </Flex>
+      </Flex>
+    </div>,
+    <div
+      style={{ backgroundImage: `url(${slider22})` }}
+      className={styles.carouselSmallSizeContainer}
+    >
+      <Flex style={{ height: "100%" }} justify="flex-end">
+        <Flex
+          vertical
+          justify="flex-start"
+          align="center"
+          className={styles.textSmallSizeContainer}
+          gap={"1rem"}
+        >
+          <h3>Online Quran, Arabic & Islamic Studies Courses</h3>
+          <p>
+            Your Quran, Tajweed, Arabic & Islamic Studies Journey starts here
+            with Mishkah Academy.
+          </p>
+          <Button size="large" type="primary" className="buttonStyle1">
+            Learn More
+          </Button>
+        </Flex>
+      </Flex>
+    </div>,
+    <div
+      style={{ backgroundImage: `url(${slider22})` }}
+      className={styles.carouselSmallSizeContainer}
+    >
+      <Flex style={{ height: "100%" }} justify="flex-end">
+        <Flex
+          vertical
+          justify="flex-start"
+          align="center"
+          className={styles.textSmallSizeContainer}
+          gap={"1rem"}
+        >
+          <h3>Online Quran, Arabic & Islamic Studies Courses</h3>
+          <p>
+            Your Quran, Tajweed, Arabic & Islamic Studies Journey starts here
+            with Mishkah Academy.
+          </p>
+          <Button size="large" type="primary" className="buttonStyle1">
+            Learn More
+          </Button>
+        </Flex>
+      </Flex>
+    </div>,
+  ];
   return (
-    <Carousel autoplay autoplaySpeed={2000}>
-      <div>
-        <div
-          className={styles.slider}
-          style={{ backgroundImage: `url(${slider1})` }}
-        >
-          <div>
-            <h3>Online Quran, Arabic &amp; Islamic Studies Courses</h3>
-            <p>
-              Your Quran, Tajweed, Arabic &amp; Islamic Studies Journey
-              <br />
-              starts here with Mishkah Academy.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div
-          className={`${styles.slider} ${styles.slider2}`}
-          style={{ backgroundImage: `url(${slider2})` }}
-        >
-          <div>
-            <h3>Online Quran Courses</h3>
-            <p>
-              Strengthen your connection with the Holy Quran by joining our
-              online Quran courses, i.e. Quran Memorization, Quran Recitation,
-              Tajweed, Ijazah and 10 Qiraat.
-            </p>
-            <Button type="primary" className={`${styles.btn}`}>
-              {"Learn More"}
-            </Button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div
-          className={`${styles.slider} ${styles.slider2}`}
-          style={{ backgroundImage: `url(${slider4})` }}
-        >
-          <div>
-            <h3>Online Islamic Studies Courses</h3>
-            <p>
-              Get connected with your Islamic roots with the help of our Islamic
-              Studies Courses that cover all the essential topics such as
-              Tafseer, Fiqh, Aqeedah Hadith, Akhlaq, Azkar, and others.
-            </p>
-            <Button type="primary" className={`${styles.btn}`}>
-              {"Learn More"}
-            </Button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div
-          className={`${styles.slider} ${styles.slider2}`}
-          style={{ backgroundImage: `url(${slider3})` }}
-        >
-          <div>
-            <h3>Online Arabic Courses</h3>
-            <p>
-              Learn To Read, Write, Speak and Understand Arabic with the help of
-              expert native Arabic tutors. Arabic learning online courses are
-              designed to cater to the needs of every student.
-            </p>
-            <Button type="primary" className={`${styles.btn}`}>
-              {"Learn More"}
-            </Button>
-          </div>
-        </div>
-      </div>
-    </Carousel>
+    <OneItemCarousel
+      CarouselItems={
+        windowWidth > 576 ? LargeCarouselItems : SmallCarouselItems
+      }
+    />
   );
 };
 

@@ -1,0 +1,30 @@
+    
+    .chevronLeft{
+        position: absolute;
+        right:  1%;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+        
+    
+    }
+    
+    .chevronRight{
+        position: absolute;
+        left:  1%;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .chevronLeft div svg:hover{
+    
+        fill: var(--secondary-color) !important ;
+        transition:all .3s ease;
+    }
+    
+    .chevronRight div svg:hover{
+        fill: var(--secondary-color) !important ;
+        transition:all .3s ease;
+    }
+    

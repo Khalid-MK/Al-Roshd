@@ -5,10 +5,11 @@ import {
   underXXlcontainerSpace,
   xxlContainerSpace,
 } from "../../../globalVariables";
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 import { Col, Row } from "antd";
 import Chveron from "../../../assets/svgs/Chveron";
 import styles from "./index.module.css";
+import { ICarousel } from "../../../shared/interfaces";
 
 const responsive = {
   superLargeDesktop: {
@@ -81,10 +82,6 @@ const CustomGroup = ({ next = () => null, previous = () => null }) => {
     </div>
   );
 };
-
-interface ICarousel {
-  CarouselItems?: ReactNode;
-}
 
 const MultipleCarousel: FC<ICarousel> = ({ CarouselItems }) => {
   return (
